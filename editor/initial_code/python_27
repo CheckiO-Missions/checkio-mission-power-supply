@@ -1,7 +1,6 @@
 def power_supply(networks, power_plants):
-​
     return []
-​
+
 if __name__ == '__main__':
     assert power_supply([['p1', 'c1'], ['c1', 'c2']], {'p1': 1}) == ['p1'], 'one blackout'
     assert power_supply([['c0', 'c1'], ['c1', 'p1'], ['c1', 'c3'], ['p1', 'c4']], {'p1': 1}) == ['c1', 'c3'], 'two blackout'
