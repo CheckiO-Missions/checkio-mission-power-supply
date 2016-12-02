@@ -6,6 +6,8 @@
 
 <p><i>more detail description and illustrations are required</i></p>
 
+<p style="text-align: center;"><img src="{{MEDIA}}schema.png" style="max-height: 294px"></p>
+
 <p><strong>Input: </strong><i>required</i></p>
 
 <p><strong>Output: </strong><i>required</i></p>
@@ -17,7 +19,7 @@
 
 {% else %}
 power_supply([['p1', 'c1'], ['c1', 'c2']], {'p1': 1}) == ['p1']
-power_supply([['c0', 'c1'], ['c1', 'p1'], ['c1', 'c3'], ['p1', 'c4']], {'p1': 1}) == ['c1', 'c3']
+power_supply([['c0', 'c1'], ['c1', 'p1'], ['c1', 'c3'], ['p1', 'c4']], {'p1': 1}) == ['c0', 'c3']
 power_supply([['p1', 'c1'], ['c1', 'c2'], ['c2', 'c3']], {'p1': 3}) == []
 {% endif %}</pre>
 </div>
