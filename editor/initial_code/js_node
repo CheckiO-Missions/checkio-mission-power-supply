@@ -1,0 +1,38 @@
+"use strict";
+
+function isFamily(tree) {
+    return true;
+}
+
+var assert = require('assert');
+
+if (!global.is_checking) {
+    assert.equal(isFamily([
+      ['Logan', 'Mike']
+    ]), true, 'One father, one son');
+    assert.equal(isFamily([
+      ['Logan', 'Mike'],
+      ['Logan', 'Jack']
+    ]), true, 'Two sons');
+    assert.equal(isFamily([
+      ['Logan', 'Mike'],
+      ['Logan', 'Jack'],
+      ['Mike', 'Alexander']
+    ]), true, 'Grandfather');
+    assert.equal(isFamily([
+      ['Logan', 'Mike'],
+      ['Logan', 'Jack'],
+      ['Mike', 'Logan']
+    ]), false, 'Can you be a father for your father?');
+    assert.equal(isFamily([
+      ['Logan', 'Mike'],
+      ['Logan', 'Jack'],
+      ['Mike', 'Jack']
+    ]), false, 'Can you be a father for your brather?');
+    assert.equal(isFamily([
+      ['Logan', 'William'],
+      ['Logan', 'Jack'],
+      ['Mike', 'Alexander']
+    ]), false, 'Looks like Mike is stranger in Logan\'s family');
+    console.log("Looks like you know everything. It is time for 'Check'!");
+}
