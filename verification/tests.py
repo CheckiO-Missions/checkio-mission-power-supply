@@ -13,7 +13,7 @@ TESTS = {
             "input": [
               [['p1', 'c1'], ['c1', 'c2']], {'p1': 1}
             ],
-            "answer": ['p1'],
+            "answer": ['c2'],
             "explanation": "one blackout"
         },
         {
