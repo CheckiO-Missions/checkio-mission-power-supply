@@ -5,10 +5,14 @@ from checkio.referees import cover_codes
 
 from tests import TESTS
 
+def unordered_unique_list(val1, val2):
+    return set(val1) == set(val2), 'checked'
+
 api.add_listener(
     ON_CONNECT,
     CheckiOReferee(
         tests=TESTS,
+        checker=unordered_unique_list,
         function_name={
             "python": "power_supply",
             "js": "powerSupply"
