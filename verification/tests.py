@@ -63,6 +63,36 @@ TESTS = {
             ],
             "answer": ['c6', 'c7'],
             "explanation": "complex cities 2"
+        },
+        {
+            "input": [
+              [['c1', 'c2'], ['c2', 'c3']], {}
+            ],
+            "answer": ['c1', 'c2', 'c3'],
+            "explanation": "no power plants"
+        },
+        {
+            "input": [
+              [['p1', 'c2'], ['p1', 'c4'], ['c4', 'c3'], ['c2', 'c3']], {'p1': 1}
+            ],
+            "answer": ['c3'],
+            "explanation": "circle"
         }
+    ],
+    "Extra": [
+        {
+            "input": [
+              [['c1', 'c2'], ['c2', 'c1']], {}
+            ],
+            "answer": ['c1', 'c2'],
+            "explanation": "no power plants"
+        },
+        {
+            "input": [
+              [['c1', 'p1'], ['p1', 'p2']], {'c1': 1}
+            ],
+            "answer": ['c2'],
+            "explanation": "switch letters"
+        },
     ]
 }
