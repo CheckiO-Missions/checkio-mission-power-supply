@@ -14,5 +14,5 @@ if __name__ == '__main__':
                          ['p0', 'c4'], ['c4', 'c9'], ['c4', 'c10'],
                        ['c10', 'c11'], ['c11', 'p12'], ['c2', 'c5'],
                        ['c2', 'c6'], ['c5', 'c7'], ['c5', 'p8']],
-                      {'p0': 1, 'p12': 4, 'p8': 1}) == ['p6', 'p7'], 'complex cities 2'
+                      {'p0': 1, 'p12': 4, 'p8': 1}) == ['c6', 'c7'], 'complex cities 2'
     print("Looks like you know everything. It is time for 'Check'!")
