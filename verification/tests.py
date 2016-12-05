@@ -77,6 +77,13 @@ TESTS = {
             ],
             "answer": ['c3'],
             "explanation": "circle"
+        },
+        {
+            "input": [
+              [['p1', 'c2'], ['p1', 'c4'], ['c2', 'c3']], {'p1': 4}
+            ],
+            "answer": [],
+            "explanation": "more than enough"
         }
     ],
     "Extra": [

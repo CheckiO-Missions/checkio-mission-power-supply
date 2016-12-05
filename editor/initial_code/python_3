@@ -17,3 +17,5 @@ if __name__ == '__main__':
                       {'p0': 1, 'p12': 4, 'p8': 1})) == set(['c6', 'c7']), 'complex cities 2'
     assert set(power_supply([['c1', 'c2'], ['c2', 'c3']], {})) == set(['c1', 'c2', 'c3']), 'no power plants'
     assert power_supply([['p1', 'c2'], ['p1', 'c4'], ['c4', 'c3'], ['c2', 'c3']], {'p1': 1}) == ['c3'], 'circle'
+    assert power_supply([['p1', 'c2'], ['p1', 'c4'], ['c2', 'c3']], {'p1': 4}) == [], 'more than enough'
+    print("Looks like you know everything. It is time for 'Check'!")
