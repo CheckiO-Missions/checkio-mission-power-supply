@@ -1,4 +1,4 @@
-def power_supply(networks, power_plants):
+def power_supply(network, power_plants):
     return []
 
 if __name__ == '__main__':

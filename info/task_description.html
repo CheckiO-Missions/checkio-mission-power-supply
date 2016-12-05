@@ -1,16 +1,28 @@
 
+<div class="story for_info_only">
+
+<p>Several power plants in this area are exploded this night. We don’t know why yet. Our engineering team is trying to figure it out. I think it was some kind of bug. I told them not to release anything if you need to get home 5 minutes later.</p>
+
+
+<p>Anyway…</p>
+
+
+<p>In case of emergency, we have a couple mobile power stations. Help us to figure out which cities are blacked out so we can send electricity there as soon as possible.</p>
+
+
+<p>Here is the city network of electricity, which shows you which power stations in each city are still working. It should enough for you to figure out which cities are not getting enough electricity.</p>
+
+</div>
 
 <p>
     You are given power networks and power-plant's information (plant-number and supply-range). You should find out blackout cities. Power-plant can supply himself and connected cities with power. but the range is limited.
 </p>
 
-<p><i>more detail description and illustrations are required</i></p>
-
 <p style="text-align: center;"><img src="{{MEDIA}}example.png" style="max-height: 294px"></p>
 
-<p><strong>Input: </strong><i>required</i></p>
+<p><strong>Input: </strong>Two arguments. The first one is network, that represented as a list of connections. Each connection is a list of two nodes that are connected. City or Power Plant can be a node. Each City or Power Plant is a unique string. The second argument is a dict where keys are Power Plants and values are Power Plant’s range.</p>
 
-<p><strong>Output: </strong><i>required</i></p>
+<p><strong>Output: </strong>Is a list of strings. Each string is a name of blacked cities.</p>
 
 
 <div class="for_info_only">
