@@ -96,7 +96,7 @@ TESTS = {
         },
         {
             "input": [
-              [['c1', 'p1'], ['p1', 'p2']], {'p1': 1}
+              [['c1', 'p1'], ['p1', 'p2']], {'c1': 1}
             ],
             "answer": ['c2'],
             "explanation": "switch letters"
