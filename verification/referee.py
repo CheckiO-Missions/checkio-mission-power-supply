@@ -8,6 +8,10 @@ from tests import TESTS
 def unordered_unique_list(val1, val2):
     return set(val1) == set(val2), 'checked'
 
+cover = """def cover(func, data):
+    return list(func(*data))
+"""
+
 api.add_listener(
     ON_CONNECT,
     CheckiOReferee(
@@ -18,8 +22,7 @@ api.add_listener(
             "js": "powerSupply"
         },
         cover_code={
-            'python-27': cover_codes.unwrap_args,
-            'python-3': cover_codes.unwrap_args,
-            'js-node': cover_codes.js_unwrap_args
+            'python-27': cover,
+            'python-3': cover
         }
     ).on_ready)
