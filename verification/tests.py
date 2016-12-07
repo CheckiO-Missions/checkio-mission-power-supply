@@ -1,4 +1,4 @@
-"""
+﻿"""
 TESTS is a dict with all you tests.
 Keys for this will be categories' names.
 Each test is dict with
