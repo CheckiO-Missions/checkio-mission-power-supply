@@ -1,4 +1,4 @@
-checkio-task-non-unique-elements
+checkio-mission-power-supply
 =====================
 
-Checkio task "Non Unique Elements"
+Checkio Mission "Power Supply"
