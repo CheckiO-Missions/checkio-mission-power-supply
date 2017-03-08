@@ -111,11 +111,10 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
             // prepare PowerPlant
             var tgt_cities = [];
             for (var o in pp){
-                if (pp[o]) {
+                if (pp[o])
                     tgt_cities.push(o);
-                    circleSet[cities[o].num].animate(
-                        {'fill': color.orange}, delay * 3);
-                }
+                circleSet[cities[o].num].animate(
+                    {'fill': color.orange}, delay * 3);
             }
 
             // start power-supply
